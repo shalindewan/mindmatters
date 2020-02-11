@@ -1,0 +1,81 @@
+h1 {
+	color: #595958;
+	font-size: 80px;
+}
+
+.tagline {
+	color: #595958;
+	font-size: 40px;
+	padding-left: 45px;	
+}
+
+
+.homeimage {
+	max-width:100%;
+}
+
+.maglogos {
+	max-width:100%;
+}
+
+
+.socialproof {
+	color: #8a8d91;
+	font-family: ‘Raleway’, sans-serif;
+	font-size: 20;
+}
+
+.app_store {
+	max-width: 10rem;
+	padding: 10px;
+}
+
+.valprop {
+	background-color: #fcd690;
+		}
+
+.navbar-custom {
+	background-color: #fcc490;
+}
+
+.firstvalprop {
+	padding-top: 30px;
+
+}
+
+.thirdvalprop {
+	padding-bottom: 30px;
+
+}
+
+.shalinpic {
+	padding-top: 30px;
+
+}
+
+.sumipic {
+	padding-bottom: 30px;
+}
+
+.five-stars {
+	max-width: 70%;
+	vertical-align: bottom;
+}
+
+.button_color {
+	background-color: grey;
+}
+
+.sign_up_color {
+	background-color: #757472;
+}
+
+.icon {
+ 	width:  50px;
+ 	height: auto;
+	line-height: 4;
+}
+
+.bottomfont {
+	color: #ffffff;
+	 }
