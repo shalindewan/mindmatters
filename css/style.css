@@ -37,6 +37,9 @@ h1 {
 }
 
 .card {
+	border: none;	
+}
+.card_review {
 	border: none;
 	padding: 70px;
 	margin-left: 30px;
