@@ -1,3 +1,9 @@
+/*@media screen and (min-width: 480px) {
+  .maglogos {
+    max-width: 50%;
+  }
+}*/
+
 h1 {
 	color: #595958;
 	font-size: 80px;
@@ -9,6 +15,11 @@ h1 {
 	padding-left: 45px;	
 }
 
+.topsign {
+	display: right;
+	background-color: #fcfa90;
+	width: 250px;
+}
 
 .homeimage {
 	max-width:100%;
@@ -79,3 +90,7 @@ h1 {
 .bottomfont {
 	color: #ffffff;
 	 }
+
+.map_special {
+	max-width: 100%;
+}
