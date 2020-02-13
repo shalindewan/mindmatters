@@ -7,8 +7,12 @@
 h1 {
 	color: #595958;
 	font-size: 80px;
+	padding: 45px;
 }
 
+h3 {
+	padding: 30px;
+}
 .tagline {
 	color: #595958;
 	font-size: 40px;
@@ -26,7 +30,7 @@ h1 {
 }
 
 .maglogos {
-	max-width:100%;
+	max-width:70%;
 }
 
 
@@ -51,9 +55,6 @@ h1 {
 	padding: 10px;
 }
 
-.valprop {
-	background-color: #fcd690;
-		}
 
 .navbar-custom {
 	background-color: #fcc490;
@@ -61,7 +62,7 @@ h1 {
 
 .firstvalprop {
 	padding-top: 30px;
-
+	max-width: 90%;
 }
 
 .thirdvalprop {
@@ -69,13 +70,9 @@ h1 {
 
 }
 
-.shalinpic {
-	padding-top: 30px;
 
-}
-
-.sumipic {
-	padding-bottom: 30px;
+.teampic {
+	max-width: 70%;
 }
 
 .five-stars {
@@ -87,9 +84,20 @@ h1 {
 	background-color: grey;
 }
 
-.sign_up_color {
-	background-color: #757472;
+.sign_up_button {
+	background-color: #fcfa90;
+	width: 250px;
+	border: 2px;
+	border-color: #8a8d91;
 }
+
+.sign_up_color {
+	background-color: #595958;
+}
+
+.download_special {
+
+		}
 
 .icon {
  	width:  50px;
