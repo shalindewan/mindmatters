@@ -24,10 +24,15 @@
 
 </head>
 <body>
+<style>
+    .background_display {
+      background-color: #bbded6;
+    }
+</style>
 
 <!-- NAV BAR -->
 
-<nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,15 +50,14 @@
         </li>
         </ul>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#team">Our Team</a>
+          <a class="nav-link" href="index.html#team">Our Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="index.html#contact">Contact Us</a>
         </li>
-        <li>
 
         
 
@@ -65,14 +69,35 @@
     <a href="#">Home</a>
     <a href="create-entry.html">Create entry</a>
   </nav> -->
-<div class="container">
-  <h1>My diary</h1>
 
-    <div id="diary-entries">
+
+<br>
+<br>
+<br>
+
+   <div class="header">
+          <h2 class="h2_padding">My Diary</h2>
+              <div class="progress-container">
+                <div class="progress-bar" id="myBar">
+                </div>
+              </div>
+  </div>
+
+
+
+
+<div class="container background_display container_special">
+    <div class="scroll " id="diary-entries">
       <h3>Loading entries&hellip;</h3>
-    </div>
-
+        </div>
 </div>
+
+<footer>
+
+  <div class="footer-copyright text-center py-3 navbar-custom sign_up_color bottomfont">© 2020 Copyright
+   
+  </div>
+</footer>
 
 <!-- Don't worry too much about what's written in the section below this in the <script tags> for now. It represents Javascript code that calls our API and returns the diary entries to our HTML page (above!) -->
   <script>
@@ -86,21 +111,38 @@
         const sortedEntries = ids.sort((a, b) => new Date(data.entries[a]).getTime() - new Date(data.entries[b]).getTime());
         const entriesContent = ids.map(id => `
           <div>
- 
-            <a href="single-entry.html?id=${id}">view</a>
-            <h5>${new Date(data.entries[id].createdat).toDateString()}</h5>
-            <p class="diary_heading">I'm grateful for: 
-            <br>${data.entries[id].grateful}</p>
-            <p> My intentions for today are:</p>
-            <br><p>${data.entries[id].intention}</p>
-            <p> My affirmation for today is: </p><br>
-            <p>${data.entries[id].affirmation}</p>
-            <hr/>
-          </div>
-        `);
+            <div class="row">
+                 <div class="col-md-12 row justify-content-center align-items-center">
+                    <div class="card card_review" style="width:400px">
+                        <a href="single-entry.html?id=${id}">view</a>
+                        <h5>${new Date(data.entries[id].createdat).toDateString()}</h5>
+                        <p class="diary_heading"> I'm grateful for:</p>
+                        <br><p>${data.entries[id].grateful}</p>
+
+                        <p class="diary_heading"> My intentions for today are:</p>
+                        <br><p>${data.entries[id].intention}</p>
+
+                        <p class="diary_heading"> My affirmation for today is: </p><br>
+                        <p>${data.entries[id].affirmation}</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <img class="mini_image justify-content-center align-items-center" src="img/balance_clear.png">
+        `).join("");
         diaryEntries.innerHTML = entriesContent;
       })
     });
+
+    window.onscroll = function() {myFunction()};
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+}
+
   </script>
 
 </div>

@@ -91,7 +91,9 @@ h3 {
 	border-color: #8a8d91;
 	border-radius: 4px;
 	padding-right: 5px;
-	float: middle;
+	margin: 0 auto;
+	color: #595958;
+	font-size: 19px;
 }
 
 .align-middle {
@@ -149,43 +151,56 @@ h4 {
 }
 
 .diary_heading {
-	font-style: bold;
+	color: #fcc490;
+	font-size: 22px;
 	}
-    /*opacity pictures*/
 
+.diary_entry_heading {
+	color: #595958;
+	font-size: 19px;
+	}
 
-/*.container {
-  position: relative;
-  width: 50%;
+.card_review {
+	padding: 30px;
+   	background-color: #fffff;
 }
 
-.image {
-  opacity: 1;
-  display: block;
+.scroll{
+	overflow: scroll;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 55px;
+  z-index: 1;
   width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  background-color: #fae3d9;
 }
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
 }
-.container:hover .image {
-  opacity: 0.3;
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #ffb6b9;
+  width: 0%;
 }
-.container:hover .middle {
-  opacity: 1;
+
+.h2_padding {
+	padding-left: 20px;
+	float: center;
 }
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}*/
+
+.mini_image {
+	max-width: 40%;
+}
+
+.container_special {
+	margin-top: 25px;
+
+}
+

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Create-Entry</title>
   <style>
     .hidden {
       display: none;
@@ -28,6 +28,12 @@
 </head>
 <body>
 
+<style>
+    .background_display {
+      background-color: #bbded6;
+    }
+</style>
+
     <!-- Navbar -->
 
 
@@ -49,13 +55,13 @@
         </li>
         </ul>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#team">Our Team</a>
+          <a class="nav-link" href="index.html#team">Our Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="index.html#contact">Contact Us</a>
         </li>
         <li>
 
@@ -68,7 +74,7 @@
 <br>
 
 
-<div class="container">
+<div class="container background_display">
     <div class="row">
 
 
@@ -98,24 +104,25 @@
           <div class="col-md-12 row justify-content-center align-items-center">
     <!-- Text box for gratitudes -->
               <form id="diary-form" action="#">
-                <label for="grateful">Today I'm grateful for:</label>
+                <label class="diary_entry_heading" for="grateful">Today I'm grateful for:</label>
                 <br/>
                 <textarea class="form_box" name="grateful"></textarea>
                 <br/>
             <!-- Text box for Intentions -->
                 <br/>
-                <label for="intention">Three goals to make today great:</label>
+                <label class="diary_entry_heading" for="intention">Three goals to make today great:</label>
                 <br/>
                 <textarea class="form_box" name="intention"></textarea>
                 <br/>
             <!-- Text box for affirmations -->
                 <br/>
-                <label for="affirmation">My affirmation for today:</label>
+                <label class="diary_entry_heading" for="affirmation">My affirmation for today:</label>
                 <br/>
                 <textarea class="form_box" name="affirmation"></textarea>
                 <br/>
-            <!-- Submit button -->
-                <input class="sign_up_button align-middle" type="submit" value="Save">
+                <!-- Submit button -->
+                <input class="sign_up_button align-middle text-align: center" type="submit" value="Save">
+
                 <br>
                 <br>
               </form>
@@ -126,12 +133,7 @@
 
 </div>
 </div>
-<footer>
 
-  <div class="footer-copyright text-center py-3 navbar-custom sign_up_color bottomfont">© 2020 Copyright
-   
-  </div>
-</footer>
 
 
 
