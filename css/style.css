@@ -30,9 +30,8 @@ h3 {
 }
 
 .maglogos {
-	max-width:70%;
+	max-width:50%;
 }
-
 
 .socialproof {
 	color: #8a8d91;
@@ -58,6 +57,7 @@ h3 {
 
 .navbar-custom {
 	background-color: #fcc490;
+	border: none;
 }
 
 .firstvalprop {
@@ -86,9 +86,16 @@ h3 {
 
 .sign_up_button {
 	background-color: #fcfa90;
-	width: 250px;
+	width: 150px;
 	border: 2px;
 	border-color: #8a8d91;
+	border-radius: 4px;
+	padding-right: 5px;
+	float: middle;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .sign_up_color {
@@ -112,3 +119,73 @@ h3 {
 .map_special {
 	max-width: 100%;
 }
+
+.h1_diary {
+	color: #595958;
+	font-size: 30px;
+	padding: 45px;
+	}
+
+.quote {
+	font-family: 'Satisfy', cursive;
+	font-size: 10px;
+}
+
+.form_box {
+	padding: 20px;
+	margin: 20px;
+	height: 200px;
+    position: relative;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .14);
+    font-size: 14px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+}
+
+.diary_heading {
+	font-style: bold;
+	}
+    /*opacity pictures*/
+
+
+/*.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}*/

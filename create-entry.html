@@ -10,37 +10,171 @@
       display: none;
     }
   </style>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+<!-- < for icons >  -->
+  <script src="https://kit.fontawesome.com/7a1b668abe.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy&display=swap" rel="stylesheet">
+
+  <link href=“https://fonts.googleapis.com/css?family=Raleway&display=swap” rel=“stylesheet”>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#">Create entry</a>
+
+    <!-- Navbar -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">Mind Matters</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">My Diary<b></b></a>
+            <ul class="dropdown-menu multi-level navbar-custom nav-item dropdown-primary">
+                  <li><a class="dropdown-item nav-link" href="create-entry.html">New Entry</a></li>
+                  <li><a class="dropdown-item nav-link" href="diary.html">All entries</a></li>
+        </li>
+        </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li>
+
+        
+
+    </div>
   </nav>
-  <h1>Create diary entry</h1>
-  <div id="success-msg" class="hidden" style="color: teal">Entry created - <a href="https://shalindewan.pythonanywhere.com/diaryentry" id="new-entry-link">view</a></div>
-  <form id="diary-form" action="#">
-    <label for="title">Entry title:</label>
-    <input type="text" name="title">
-    <br/>
-    <label for="description">Entry text:</label>
-    <textarea name="description"></textarea>
-    <br/>
-    <input type="submit" value="Save">
-  </form>
-</body>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row">
+
+
+<!-- Quote of the day -->
+          <div class="col-md-12">
+
+          <div class="quote" id="quote">
+
+        </div>
+
+<!-- Entry saved -->
+
+        <div id="success-msg" class="hidden" style="color: teal">Entry created - <a href="/" id="new-entry-link">view</a>
+        </div>
+
+
+<!-- Select the day for today -->
+
+<!-- <label for="Entry-date">Today's entry for</label>
+<input type="datetime-local" id="Entry-date"
+       name="Entry-date" value="2018-06-12T19:30"
+       min="2018-06-07" max="2018-06-14T">
+
+
+    <br/> -->
+    <div class="row">
+          <div class="col-md-12 row justify-content-center align-items-center">
+    <!-- Text box for gratitudes -->
+              <form id="diary-form" action="#">
+                <label for="grateful">Today I'm grateful for:</label>
+                <br/>
+                <textarea class="form_box" name="grateful"></textarea>
+                <br/>
+            <!-- Text box for Intentions -->
+                <br/>
+                <label for="intention">Three goals to make today great:</label>
+                <br/>
+                <textarea class="form_box" name="intention"></textarea>
+                <br/>
+            <!-- Text box for affirmations -->
+                <br/>
+                <label for="affirmation">My affirmation for today:</label>
+                <br/>
+                <textarea class="form_box" name="affirmation"></textarea>
+                <br/>
+            <!-- Submit button -->
+                <input class="sign_up_button align-middle" type="submit" value="Save">
+                <br>
+                <br>
+              </form>
+
+          </div>
+    </div>
+
+
+</div>
+</div>
+<footer>
+
+  <div class="footer-copyright text-center py-3 navbar-custom sign_up_color bottomfont">© 2020 Copyright
+   
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 
 
 <!-- This script tag powers our form by sending the information to the API once you've cliked submit!  -->
 <script>
   const url = 'https://shalindewan.pythonanywhere.com/diaryentry';
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const quoteOfTheDay = document.querySelector('#quote');
+    fetch('https://150000-quotes.p.rapidapi.com/keyword/Life', {
+      method: 'get',
+      headers: {
+        'X-RapidAPI-Host': '150000-quotes.p.rapidapi.com',
+        'X-RapidAPI-Key': '3d03c449f7msh5286a77a3f6043bp17a512jsnb9fe3484236b',
+        'keyword': 'Life'
+      }
+    })
+    .then(r => r.json())
+    .then(data => {
+      const message = data.message;
+      const messageContent = `
+      <h3>${message}</h3>`
+      // console.log(message);
+
+      quoteOfTheDay.innerHTML = messageContent;
+    })
+  });
+
   document.querySelector('#diary-form').addEventListener("submit", (ev) => {
     ev.preventDefault();
     console.log(ev);
 
     const data = {
-      title: ev.target.elements[0].value,
-      description: ev.target.elements[1].value,
+      grateful: ev.target.elements[0].value,
+      intention: ev.target.elements[1].value,
+      affirmation: ev.target.elements[2].value,
     }
 
     fetch(url, {
@@ -59,4 +193,6 @@
     })
   });
 </script>
+
+</body>
 </html>
